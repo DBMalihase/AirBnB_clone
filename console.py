@@ -174,6 +174,3 @@ class HBNBCommand(cmd.Cmd):
             print("*** Unknown syntax: {}".format(line))
             return
 
-
-if __name__ == '__main__':
-    HBNBCommand().cmdloop()
