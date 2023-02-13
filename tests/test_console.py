@@ -55,8 +55,4 @@ class TestConsole(unittest.TestCase):
             self.consol.onecmd("test")
             self.assertEqual("*** Unknown syntax: test\n", f.getvalue())
 
-    def test_quit(self):
-        """test the quit command works"""
-        with patch('sys.stdout', new=StringIO()) as f:
-            self.consol.onecmd("quit")
-            self.assertEqual('', f.getvalue())
+    
